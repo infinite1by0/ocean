@@ -1,4 +1,3 @@
-Sure, here's a detailed file/folder hierarchy structure for an Angular dashboard application, using a hypothetical "Sales Dashboard" as an example. This structure emphasizes modularity, maintainability, and scalability.
 
 ```
 sales-dashboard/
