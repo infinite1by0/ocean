@@ -1,0 +1,161 @@
+sales-dashboard/
+├── .angular/
+│   └── cache/
+│       └── ... (Angular compilation cache)
+├── .vscode/
+│   └── extensions.json
+│   └── launch.json
+│   └── settings.json
+├── node_modules/
+│   └── ... (All installed npm packages)
+├── src/
+│   ├── app/
+│   │   ├── core/
+│   │   │   ├── auth/
+│   │   │   │   ├── auth.guard.ts
+│   │   │   │   ├── auth.service.ts
+│   │   │   │   └── token.interceptor.ts
+│   │   │   ├── services/
+│   │   │   │   ├── api.service.ts
+│   │   │   │   ├── data.service.ts
+│   │   │   │   └── notification.service.ts
+│   │   │   ├── interceptors/
+│   │   │   │   └── error.interceptor.ts
+│   │   │   └── core.module.ts
+│   │   ├── shared/
+│   │   │   ├── components/
+│   │   │   │   ├── card/
+│   │   │   │   │   ├── card.component.html
+│   │   │   │   │   ├── card.component.scss
+│   │   │   │   │   └── card.component.ts
+│   │   │   │   ├── chart/
+│   │   │   │   │   ├── chart.component.html
+│   │   │   │   │   ├── chart.component.scss
+│   │   │   │   │   └── chart.component.ts
+│   │   │   │   ├── table/
+│   │   │   │   │   ├── table.component.html
+│   │   │   │   │   ├── table.component.scss
+│   │   │   │   │   └── table.component.ts
+│   │   │   │   └── ... (Other reusable components like modal, spinner, etc.)
+│   │   │   ├── directives/
+│   │   │   │   ├── highlight.directive.ts
+│   │   │   │   └── ...
+│   │   │   ├── pipes/
+│   │   │   │   ├── currency-format.pipe.ts
+│   │   │   │   └── ...
+│   │   │   ├── models/
+│   │   │   │   ├── user.model.ts
+│   │   │   │   ├── sales-data.model.ts
+│   │   │   │   └── ...
+│   │   │   ├── shared.module.ts
+│   │   │   └── constants/
+│   │   │       ├── api.constants.ts
+│   │   │       └── app.constants.ts
+│   │   ├── features/
+│   │   │   ├── auth/
+│   │   │   │   ├── components/
+│   │   │   │   │   ├── login/
+│   │   │   │   │   │   ├── login.component.html
+│   │   │   │   │   │   ├── login.component.scss
+│   │   │   │   │   │   └── login.component.ts
+│   │   │   │   │   └── register/
+│   │   │   │   │       ├── register.component.html
+│   │   │   │   │       ├── register.component.scss
+│   │   │   │   │       └── register.component.ts
+│   │   │   │   ├── auth-routing.module.ts
+│   │   │   │   └── auth.module.ts
+│   │   │   ├── dashboard/
+│   │   │   │   ├── components/
+│   │   │   │   │   ├── sales-overview/
+│   │   │   │   │   │   ├── sales-overview.component.html
+│   │   │   │   │   │   ├── sales-overview.component.scss
+│   │   │   │   │   │   └── sales-overview.component.ts
+│   │   │   │   │   ├── product-performance/
+│   │   │   │   │   │   ├── product-performance.component.html
+│   │   │   │   │   │   ├── product-performance.component.scss
+│   │   │   │   │   │   └── product-performance.component.ts
+│   │   │   │   │   ├── region-sales/
+│   │   │   │   │   │   ├── region-sales.component.html
+│   │   │   │   │   │   ├── region-sales.component.scss
+│   │   │   │   │   │   └── region-sales.component.ts
+│   │   │   │   │   └── ... (Other dashboard widgets)
+│   │   │   │   ├── services/
+│   │   │   │   │   └── dashboard-data.service.ts
+│   │   │   │   ├── dashboard-routing.module.ts
+│   │   │   │   └── dashboard.module.ts
+│   │   │   ├── reports/
+│   │   │   │   ├── components/
+│   │   │   │   │   ├── sales-report/
+│   │   │   │   │   │   ├── sales-report.component.html
+│   │   │   │   │   │   ├── sales-report.component.scss
+│   │   │   │   │   │   └── sales-report.component.ts
+│   │   │   │   ├── services/
+│   │   │   │   │   └── report-generator.service.ts
+│   │   │   │   ├── reports-routing.module.ts
+│   │   │   │   └── reports.module.ts
+│   │   │   ├── settings/
+│   │   │   │   ├── components/
+│   │   │   │   │   ├── user-profile/
+│   │   │   │   │   │   ├── user-profile.component.html
+│   │   │   │   │   │   ├── user-profile.component.scss
+│   │   │   │   │   │   └── user-profile.component.ts
+│   │   │   │   ├── settings-routing.module.ts
+│   │   │   │   └── settings.module.ts
+│   │   │   └── ... (Other feature modules like User Management, Notifications)
+│   │   ├── layouts/
+│   │   │   ├── default-layout/
+│   │   │   │   ├── default-layout.component.html
+│   │   │   │   ├── default-layout.component.scss
+│   │   │   │   └── default-layout.component.ts
+│   │   │   ├── auth-layout/
+│   │   │   │   ├── auth-layout.component.html
+│   │   │   │   ├── auth-layout.component.scss
+│   │   │   │   └── auth-layout.component.ts
+│   │   │   └── header/
+│   │   │       ├── header.component.html
+│   │   │       ├── header.component.scss
+│   │   │       └── header.component.ts
+│   │   │   └── sidebar/
+│   │   │       ├── sidebar.component.html
+│   │   │       ├── sidebar.component.scss
+│   │   │       └── sidebar.component.ts
+│   │   ├── app-routing.module.ts
+│   │   ├── app.component.html
+│   │   ├── app.component.scss
+│   │   ├── app.component.spec.ts
+│   │   ├── app.component.ts
+│   │   └── app.module.ts
+│   ├── assets/
+│   │   ├── images/
+│   │   │   ├── logo.svg
+│   │   │   └── ...
+│   │   ├── scss/
+│   │   │   ├── _variables.scss
+│   │   │   ├── _mixins.scss
+│   │   │   ├── _base.scss
+│   │   │   ├── _typography.scss
+│   │   │   └── styles.scss
+│   │   ├── i18n/
+│   │   │   ├── en.json
+│   │   │   └── es.json
+│   │   └── data/
+│   │       └── mock-data.json
+│   ├── environments/
+│   │   ├── environment.ts
+│   │   └── environment.prod.ts
+│   ├── favicon.ico
+│   ├── index.html
+│   ├── main.ts
+│   ├── polyfills.ts
+│   ├── test.ts
+│   └── tsconfig.app.json
+│   └── tsconfig.spec.json
+│   └── tsconfig.json
+├── angular.json
+├── karma.conf.js
+├── package.json
+├── README.md
+├── tsconfig.json
+├── tsconfig.app.json
+├── tsconfig.spec.json
+└── tslint.json
